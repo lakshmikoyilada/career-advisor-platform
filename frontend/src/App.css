@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+  height: var(--navbar-height, 6rem);
+  box-sizing: border-box;
+}
+:root {
+  --navbar-height: 96px; /* adjust to your actual navbar height */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  margin-top: 200px;
+}
+.cta-btn {
+  padding: 10px 20px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,200 @@
+/* ProfileDashboard.css */
+@import '../pages/Auth.css';
+
+/* Layout background aligned with Auth.css */
+.profile-dashboard {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh; /* full viewport height */
+  padding: 90px 1rem 2.5rem; /* top padding avoids fixed header (Header.css height ~70px) */
+}
+@media (min-width: 768px) {
+  .profile-dashboard {
+    padding: 100px 2rem 3.5rem;
+  }
+}
+
+/* Header strip */
+.pd-header {
+  border: 1px solid rgba(0,0,0,0.05);
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the heading */
+  text-align: center;
+}
+.pd-header-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Sidebar */
+.pd-sidebar {
+  position: sticky;
+  top: 88px; /* below fixed header */
+}
+
+/* Unified side card (avatar + info + progress + nav) */
+.pd-sidecard {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.08);
+  overflow: hidden; /* so nav items clip nicely */
+  padding-bottom: 0.25rem;
+}
+.pd-sidecard .p-6 { /* bump inner header area padding */
+  padding: 1.75rem !important;
+}
+
+/* Ensure main content sits next to the sidebar, not below */
+.pd-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .pd-layout {
+    grid-template-columns: 1fr 2.2fr; /* sidebar | content */
+    align-items: start;
+  }
+}
+
+.pd-content {
+  min-width: 0; /* prevent overflow causing wrapping under sidebar */
+  padding-right: 0.5rem;
+}
+
+.pd-avatar {
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.18);
+  background: rgba(79, 70, 229, 0.1) !important;
+  color: var(--primary) !important;
+}
+
+.pd-progress {
+  height: 8px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: #e5e7eb;
+}
+.pd-progress > span {
+  display: block;
+  height: 100%;
+  width: 80%;
+  background: #22c55e;
+}
+
+/* Sidebar nav */
+.pd-nav { /* sits inside sidecard, so no extra background needed */
+  display: block;
+}
+.pd-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  color: #374151;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.06s ease;
+  background: transparent;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f3f4f6; /* divider between items */
+}
+.pd-nav-item:hover {
+  background: #f9fafb;
+}
+.pd-nav-item--active {
+  background: var(--primary);
+  color: #ffffff;
+}
+.pd-nav-item i {
+  width: 20px;
+  text-align: center;
+}
+.pd-nav .pd-nav-item:first-child {
+  border-top: 0;
+}
+
+/* Cards & sections */
+.pd-card {
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.08);
+  padding: 1.75rem; /* increase inner spacing */
+}
+.pd-card:hover {
+  transform: translateY(-1px);
+}
+
+.pd-metric {
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  padding: 1.25rem 1.5rem; /* bigger metric tile padding */
+}
+.pd-metric--primary {
+  background: var(--primary);
+  color: #fff;
+}
+.pd-metric--success {
+  background: var(--success);
+  color: #fff;
+}
+.pd-metric--accent {
+  background: var(--primary-hover);
+  color: #fff;
+}
+
+/* Section heading */
+.pd-section-title {
+  font-weight: 700;
+}
+
+/* Edit button */
+.pd-edit-btn {
+  border-radius: 9999px;
+  padding: 10px 16px;
+  background: var(--primary);
+  color: #fff;
+}
+.pd-edit-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Detailed view styles (like screenshot) */
+.pd-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ef4444; /* red accent like the screenshot */
+  margin-bottom: 0.75rem;
+}
+.pd-section-header i {
+  color: #ef4444;
+}
+.pd-section-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 1.25rem;
+}
+.pd-field {
+  margin-bottom: 1.25rem;
+}
+.pd-field-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+.pd-field-value {
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .pd-sidebar {
+    position: static;
+  }
+}
