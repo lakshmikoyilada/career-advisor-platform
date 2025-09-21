@@ -1,0 +1,138 @@
+{
+  "9": {
+    "career": "Web Designer",
+    "roadmap": {
+      "Beginner": [
+        {
+          "skill": "javascript",
+          "status": "pending"
+        },
+        {
+          "skill": "html",
+          "status": "pending"
+        },
+        {
+          "skill": "django",
+          "status": "pending"
+        },
+        {
+          "skill": "python",
+          "status": "pending"
+        },
+        {
+          "skill": "java",
+          "status": "pending"
+        },
+        {
+          "skill": "javascript",
+          "status": "pending"
+        },
+        {
+          "skill": "html",
+          "status": "pending"
+        },
+        {
+          "skill": "django",
+          "status": "pending"
+        },
+        {
+          "skill": "python",
+          "status": "pending"
+        },
+        {
+          "skill": "java",
+          "status": "pending"
+        },
+        {
+          "skill": "django",
+          "status": "pending"
+        },
+        {
+          "skill": "python",
+          "status": "pending"
+        },
+        {
+          "skill": "java",
+          "status": "pending"
+        },
+        {
+          "skill": "HTML",
+          "status": "pending"
+        },
+        {
+          "skill": "CSS",
+          "status": "pending"
+        },
+        {
+          "skill": "JavaScript",
+          "status": "pending"
+        },
+        {
+          "skill": "Git",
+          "status": "pending"
+        },
+        {
+          "skill": "Basic UI",
+          "status": "pending"
+        }
+      ],
+      "Intermediate": [
+        {
+          "skill": "React",
+          "status": "pending"
+        },
+        {
+          "skill": "State Management",
+          "status": "pending"
+        },
+        {
+          "skill": "REST APIs",
+          "status": "pending"
+        },
+        {
+          "skill": "CSS Frameworks",
+          "status": "pending"
+        }
+      ],
+      "Advanced": [
+        {
+          "skill": "Next.js",
+          "status": "pending"
+        },
+        {
+          "skill": "Performance Optimization",
+          "status": "pending"
+        },
+        {
+          "skill": "Testing",
+          "status": "pending"
+        },
+        {
+          "skill": "SSR",
+          "status": "pending"
+        }
+      ],
+      "Mini Projects": [
+        {
+          "project": "Personal Portfolio",
+          "status": "pending"
+        },
+        {
+          "project": "Simple To-Do App",
+          "status": "pending"
+        }
+      ],
+      "Main Projects": [
+        {
+          "project": "E-commerce SPA",
+          "status": "pending"
+        },
+        {
+          "project": "Real-time Chat App",
+          "status": "pending"
+        }
+      ]
+    },
+    "llm_used": "fallback"
+  }
+}
