@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://<lakshmikoyilada>.github.io/<career-advisor-platform>",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -25,8 +26,7 @@
     "react-tooltip": "^5.29.1",
     "reactflow": "^11.11.4",
     "styled-components": "^6.1.19",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://<lakshmikoyilada>.github.io/<career-advisor-platform>"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
