@@ -70,30 +70,53 @@ const Roadmap = () => {
           return;
         }
         const res = await getUserRoadmap(String(userId));
-        setData(res);
+        if (active) setData(res);
       } catch (err) {
-        const msg = err?.response?.data?.detail || err?.response?.data?.error || err?.message || 'Failed to load roadmap.';
-        setError(msg);
+        const msg =
+          err?.response?.data?.detail ||
+          err?.response?.data?.error ||
+          err?.message ||
+          'Failed to load roadmap.';
+        if (active) setError(msg);
       } finally {
         if (active) setLoading(false);
       }
     };
     fetchRoadmap();
-    return () => { active = false; };
+    return () => {
+      active = false;
+    };
   }, [userId]);
 
-  if (loading) return <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8">Loading roadmap...</div>;
-  if (error) return <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8 text-red-600">{error}</div>;
-  if (!data) return <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8">No roadmap found. Create one from the AI Career Advisor.</div>;
+  if (loading)
+    return (
+      <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8">
+        Loading roadmap...
+      </div>
+    );
+  if (error)
+    return (
+      <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8 text-red-600">
+        {error}
+      </div>
+    );
 
-  const career = data.career || data?.roadmap?.career || '-';
-  const roadmap = data.roadmap?.roadmap || data.roadmap || data; // normalize in case of different shapes
+  const career = data?.career || '-';
+  const roadmap = data?.roadmap || null;
+
+  if (!roadmap || Object.keys(roadmap).length === 0) {
+    return (
+      <div className="max-w-6xl mx-auto py-10 px-4 md:px-6 lg:px-8 text-gray-600 text-center">
+        Roadmap not available. Please create one from the AI Career Advisor.
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto pb-8 px-4 md:px-6 lg:px-8 space-y-8">
       <div className="text-center py-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          {career ? `${career} Roadmap` : 'Career Roadmap'}
+          {career} Roadmap
         </h1>
         <div className="mt-2 w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
       </div>

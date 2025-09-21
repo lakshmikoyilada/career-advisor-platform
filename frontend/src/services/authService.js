@@ -55,7 +55,7 @@ const authService = {
   // Signup a new user
   async signup(userData) {
     try {
-      const response = await api.post('/auth/signup/', {
+      const response = await api.post('/signup/', {
         name: userData.name.trim(),
         email: userData.email.trim().toLowerCase(),
         password: userData.password
