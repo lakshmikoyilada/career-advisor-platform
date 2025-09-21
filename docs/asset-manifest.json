@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3990f20c.css",
-    "main.js": "/static/js/main.1fe492d3.js",
-    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
-    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
-    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
-    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
-    "index.html": "/index.html",
-    "main.3990f20c.css.map": "/static/css/main.3990f20c.css.map",
-    "main.1fe492d3.js.map": "/static/js/main.1fe492d3.js.map"
+    "main.css": "/career-advisor-platform/static/css/main.5f55550e.css",
+    "main.js": "/career-advisor-platform/static/js/main.97f56ceb.js",
+    "static/media/fa-solid-900.woff2": "/career-advisor-platform/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
+    "static/media/fa-brands-400.woff2": "/career-advisor-platform/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
+    "static/media/fa-regular-400.woff2": "/career-advisor-platform/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
+    "static/media/fa-v4compatibility.woff2": "/career-advisor-platform/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
+    "index.html": "/career-advisor-platform/index.html",
+    "main.5f55550e.css.map": "/career-advisor-platform/static/css/main.5f55550e.css.map",
+    "main.97f56ceb.js.map": "/career-advisor-platform/static/js/main.97f56ceb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3990f20c.css",
-    "static/js/main.1fe492d3.js"
+    "static/css/main.5f55550e.css",
+    "static/js/main.97f56ceb.js"
   ]
 }
