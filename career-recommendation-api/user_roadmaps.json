@@ -134,5 +134,133 @@
       ]
     },
     "llm_used": "fallback"
+  },
+  "11": {
+    "career": "Fullstack Developer",
+    "roadmap": {
+      "Beginner": [
+        {
+          "skill": "java script",
+          "status": "pending"
+        },
+        {
+          "skill": "python",
+          "status": "pending"
+        },
+        {
+          "skill": "react js",
+          "status": "pending"
+        },
+        {
+          "skill": "java script",
+          "status": "pending"
+        },
+        {
+          "skill": "python",
+          "status": "pending"
+        },
+        {
+          "skill": "react js",
+          "status": "pending"
+        },
+        {
+          "skill": "java script",
+          "status": "pending"
+        },
+        {
+          "skill": "react js",
+          "status": "pending"
+        },
+        {
+          "skill": "Python",
+          "status": "pending"
+        },
+        {
+          "skill": "SQL",
+          "status": "pending"
+        },
+        {
+          "skill": "Excel",
+          "status": "pending"
+        },
+        {
+          "skill": "Statistics",
+          "status": "pending"
+        },
+        {
+          "skill": "Data Visualization",
+          "status": "pending"
+        },
+        {
+          "skill": "Linux",
+          "status": "pending"
+        }
+      ],
+      "Intermediate": [
+        {
+          "skill": "Pandas",
+          "status": "pending"
+        },
+        {
+          "skill": "NumPy",
+          "status": "pending"
+        },
+        {
+          "skill": "Data Cleaning",
+          "status": "pending"
+        },
+        {
+          "skill": "Scikit-Learn",
+          "status": "pending"
+        },
+        {
+          "skill": "Visualization Tools",
+          "status": "pending"
+        }
+      ],
+      "Advanced": [
+        {
+          "skill": "Deep Learning",
+          "status": "pending"
+        },
+        {
+          "skill": "NLP",
+          "status": "pending"
+        },
+        {
+          "skill": "MLOps",
+          "status": "pending"
+        },
+        {
+          "skill": "Big Data (Spark)",
+          "status": "pending"
+        },
+        {
+          "skill": "Cloud ML",
+          "status": "pending"
+        }
+      ],
+      "Mini Projects": [
+        {
+          "project": "Data Cleaning with Pandas",
+          "status": "pending"
+        },
+        {
+          "project": "Exploratory Data Analysis",
+          "status": "pending"
+        }
+      ],
+      "Main Projects": [
+        {
+          "project": "End-to-end ML Project",
+          "status": "pending"
+        },
+        {
+          "project": "Production-ready Data Pipeline",
+          "status": "pending"
+        }
+      ]
+    },
+    "llm_used": "fallback"
   }
 }
