@@ -1,9 +1,12 @@
 // frontend/src/services/aiAdvisorService.js
 import axios from 'axios';
 
-// Configure AI API base URL via env; fallback to 8001 locally.
-// Example: REACT_APP_AI_API_URL=http://127.0.0.1:8001
-const AI_API_URL = process.env.REACT_APP_AI_API_URL || 'http://127.0.0.1:8001';
+// AI API base URL is configured via REACT_APP_AI_API_URL in .env
+const AI_API_URL = process.env.REACT_APP_AI_API_URL;
+
+if (!AI_API_URL) {
+  console.error('REACT_APP_AI_API_URL is not defined in environment variables');
+}
 
 const aiApi = axios.create({
   baseURL: AI_API_URL,

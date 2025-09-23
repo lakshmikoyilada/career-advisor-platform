@@ -1,7 +1,7 @@
 // frontend/src/services/authService.js
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/api/auth";
+const API_URL = `${process.env.REACT_APP_API_BASE_URL}/api/auth`;
 
 // Create axios instance
 const api = axios.create({
